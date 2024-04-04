@@ -13,7 +13,7 @@
             text-align: center;
         }
         .container {
-            display: flex;
+            display: block;
             justify-content: space-around;
             margin-top: 20px;
         }
@@ -34,6 +34,30 @@
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             grid-gap: 10px;
+            height: 500px;
+        }
+        .gallery>a>img{
+            object-fit: cover;
+            object-position: center;
+            height: 490px;
+            border-radius: 20px;
+        }
+        .hello>img{
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 10px;
+        }
+        .imager>li>a>img{
+            width: 200px;
+            height: 70px;
+            border-radius: 5px;
+            object-fit: cover;
+            object-position: center;
+        }
+        .imager>li{
+            display: inline-grid;
         }
     </style>
 </head>
@@ -44,22 +68,42 @@
         <div class="section">
             <h2>Home</h2>
             <p>Welcome to our website! Explore the links below.</p>
-            <a href="https://example.com/technology"><img src="technology_image.jpg" alt="Technology"></a>
+            <a class="hello" href="https://pixabay.com/illustrations/artificial-intelligence-brain-think-3382507/">
+                <img src="https://cdn.pixabay.com/photo/2018/05/08/08/44/artificial-intelligence-3382507_1280.jpg" alt="Technology Image">
+            </a>
         </div>
         <div class="section">
             <h2>Gallery</h2>
             <div class="gallery">
-                <a href="https://example.com/nature1"><img src="nature_image1.jpg" alt="Nature 1"></a>
-                <a href="https://example.com/nature2"><img src="nature_image2.jpg" alt="Nature 2"></a>
-                <a href="https://example.com/nature3"><img src="nature_image3.jpg" alt="Nature 3"></a>
+                <a href="https://pixabay.com/photos/dahlia-flower-plant-petals-bloom-8587940/">
+                    <img src="https://cdn.pixabay.com/photo/2024/02/21/15/28/dahlia-8587940_1280.jpg" alt="Nature 1">
+                </a>
+                <a href="https://pixabay.com/photos/sunset-lake-water-reflection-8424565/">
+                    <img src="https://cdn.pixabay.com/photo/2023/12/01/21/50/sunset-8424565_1280.jpg" alt="Nature 2">
+                </a>
+                <a href="https://pixabay.com/photos/forsythia-flowers-branch-8595521/">
+                    <img src="https://cdn.pixabay.com/photo/2024/02/25/10/11/forsythia-8595521_1280.jpg" alt="Nature 3">
+                </a>
             </div>
         </div>
         <div class="section">
             <h2>Menu</h2>
-            <ul>
-                <li><a href="https://example.com/food1"><img src="food_image1.jpg" alt="Food 1"></a> Food 1</li>
-                <li><a href="https://example.com/food2"><img src="food_image2.jpg" alt="Food 2"></a> Food 2</li>
-                <li><a href="https://example.com/food3"><img src="food_image3.jpg" alt="Food 3"></a> Food 3</li>
+            <ul class="imager">
+                <li>
+                    <a href="https://example.com/food1">
+                        <img src="https://cdn.pixabay.com/photo/2023/10/08/13/03/ai-generated-8302143_1280.jpg" alt="Food 1">
+                    </a> Burger
+                </li>
+                <li>
+                    <a href="https://example.com/food2">
+                        <img src="https://cdn.pixabay.com/photo/2016/03/05/09/22/eat-1237431_960_720.jpg" alt="Food 2">
+                    </a> Pizza
+                </li>
+                <li>
+                    <a href="https://example.com/food3">
+                        <img src="https://cdn.pixabay.com/photo/2018/08/29/19/03/steak-3640560_960_720.jpg" alt="Food 3">
+                    </a> Steak
+                </li>
             </ul>
         </div>
     </div>
