@@ -1,11 +1,11 @@
 // Copyright 2024 Steve Nginyo
-// 
+//
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
 // You may obtain a copy of the License at
-// 
+//
 //     https://www.apache.org/licenses/LICENSE-2.0
-// 
+//
 // Unless required by applicable law or agreed to in writing, software
 // distributed under the License is distributed on an "AS IS" BASIS,
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -19,14 +19,14 @@ void main() {
   print(myNumbers());
 }
 
-void myAge(int age){
+void myAge(int age) {
   print("My age is ${age} years");
 }
 
-String myFullName(String fname, String mname, String lname)=>
-  "My full name is ${fname} ${mname} ${lname}";
+String myFullName(String fname, String mname, String lname) =>
+    "My full name is ${fname} ${mname} ${lname}";
 
-List<double> myNumbers(){
+List<double> myNumbers() {
   List<double> finale = [];
   List form1 = [90, 75, 12, 100];
   List form2 = [40, 65, 52, 70, 100];
@@ -37,7 +37,9 @@ List<double> myNumbers(){
   double f3 = form3.reduce((a, b) => a + b) / form3.length;
   double f4 = form4.reduce((a, b) => a + b) / form4.length;
   print("Form 1 marks");
-  form1.forEach((mark){ print(mark); });
+  form1.forEach((mark) {
+    print(mark);
+  });
   print("Mean marks of all forms");
   finale.add(f1);
   finale.add(f2);
